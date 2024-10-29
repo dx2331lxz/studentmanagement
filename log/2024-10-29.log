@@ -1,0 +1,241 @@
+2024/10/29 09:40:02.743  [I] [main.go:33]  启动日志：项目启动成功
+2024/10/29 09:40:02.748  [I] [server.go:281]  http server Running on http://:8080
+2024/10/29 09:41:10.028  [I] [main.go:31]  log/2024-10-29.log
+2024/10/29 09:41:10.028  [I] [main.go:34]  启动日志：项目启动成功
+2024/10/29 09:41:10.033  [I] [server.go:281]  http server Running on http://:8080
+2024/10/29 09:43:03.302  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  17.383625ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 09:43:03.753  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m| 213.963125ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 09:43:18.818  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m| 372.744542ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 09:43:20.199  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  32.022042ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 09:43:29.040  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   1.636666ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 09:43:29.336  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|     27.966ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 09:45:19.270  [I] [main.go:30]  log/2024-10-29.log
+2024/10/29 09:45:19.270  [I] [main.go:33]  启动日志：项目启动成功
+2024/10/29 09:45:19.275  [I] [server.go:281]  http server Running on http://:8080
+2024/10/29 09:46:57.533  [I] [student.go:59]  &{0   0 }
+2024/10/29 09:46:57.843  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|    312.485ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 09:46:59.194  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|    27.3215ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 09:47:05.232  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   3.601084ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 09:47:05.462  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  24.064125ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 09:49:08.035  [I] [student.go:59]  &{0   0 }
+2024/10/29 09:49:08.090  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  60.890667ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 09:49:09.503  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  34.935208ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 09:49:20.828  [I] [student.go:59]  &{0   0 }
+2024/10/29 09:49:20.917  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  89.702458ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 09:49:22.359  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  24.860708ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 09:49:34.329  [I] [main.go:30]  log/2024-10-29.log
+2024/10/29 09:49:34.329  [I] [main.go:33]  启动日志：项目启动成功
+2024/10/29 09:49:34.340  [I] [server.go:281]  http server Running on http://:8080
+2024/10/29 09:49:38.874  [I] [student.go:59]  &{0   0 }
+2024/10/29 09:49:39.197  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  323.88925ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 09:49:40.379  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  25.093708ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 09:49:41.962  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   1.653541ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 09:49:42.349  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  29.151375ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 09:50:23.628  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  15.013333ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 09:50:23.891  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  23.534959ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 09:50:30.000  [I] [student.go:59]  &{0   0 }
+2024/10/29 09:50:30.088  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   88.64325ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 09:50:32.043  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|     33.792ms|   match|[97;44m GET     [0m /student   r:/student2024/10/29 09:55:45.681  [I] [main.go:30]  log/2024-10-29.log
+2024/10/29 09:55:45.681  [I] [main.go:33]  启动日志：项目启动成功
+2024/10/29 09:55:45.688  [I] [server.go:281]  http server Running on http://:8080
+2024/10/29 09:55:54.463  [I] [student.go:59]  &{22020007067123 123 M 1 12}
+2024/10/29 09:55:54.784  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m| 320.962833ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 09:55:56.270  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   26.87325ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 09:56:02.476  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   1.975792ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 09:56:02.616  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  29.089834ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 09:56:15.989  [I] [student.go:59]  &{22020007067 道宣 M 123 22级软件工程}
+2024/10/29 09:56:16.040  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|    51.0255ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 09:56:17.257  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  23.836667ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 09:58:55.919  [I] [main.go:30]  log/2024-10-29.log
+2024/10/29 09:58:55.919  [I] [main.go:33]  启动日志：项目启动成功
+2024/10/29 09:58:55.923  [I] [server.go:281]  http server Running on http://:8080
+2024/10/29 09:59:01.737  [I] [student.go:59]  &{22020007067 道宣 M 123 22级软件工程}
+2024/10/29 09:59:02.033  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m| 296.977875ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 09:59:16.737  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|      6.704ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 09:59:16.763  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   28.33575ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 09:59:16.868  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  22.999334ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 09:59:22.856  [I] [student.go:59]  &{22020007067 道宣 M 1 1}
+2024/10/29 09:59:22.913  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  57.137833ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 09:59:26.557  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  24.940708ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 09:59:59.388  [I] [main.go:30]  log/2024-10-29.log
+2024/10/29 09:59:59.388  [I] [main.go:33]  启动日志：项目启动成功
+2024/10/29 09:59:59.394  [I] [server.go:281]  http server Running on http://:8080
+2024/10/29 10:00:03.391  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   3.293042ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 10:00:03.689  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m| 219.231708ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 10:00:13.346  [I] [student.go:59]  &{22020007067 武林外传 M 1 22级软件工程}
+2024/10/29 10:00:13.404  [E] [student.go:75]  添加失败 Error 1406 (22001): Data too long for column 'Sno' at row 1
+2024/10/29 10:00:13.405  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  59.539542ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 10:00:31.011  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  25.597292ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 10:01:05.240  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   2.857584ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 10:01:05.334  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  24.027667ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 10:01:22.359  [I] [student.go:59]  &{12 道宣 M 1 22级软件工程}
+2024/10/29 10:01:22.418  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  61.433792ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 10:01:23.725  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  35.448375ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 19:33:08.024  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  16.771458ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 19:33:08.511  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m| 346.158625ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 19:33:29.120  [I] [student.go:59]  &{22020 武林外传 M 45 23级软件工程}
+2024/10/29 19:33:29.185  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  68.677084ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 19:33:30.928  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  31.116667ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 19:33:40.616  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   2.901209ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 19:33:40.696  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|    24.2365ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 19:44:21.738  [I] [main.go:30]  log/2024-10-29.log
+2024/10/29 19:44:21.738  [I] [main.go:33]  启动日志：项目启动成功
+2024/10/29 19:44:21.747  [I] [server.go:281]  http server Running on http://:8080
+2024/10/29 19:44:27.759  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|     2.0305ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 19:44:28.207  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m| 278.274333ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 19:44:36.579  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  64.516792ms|   match|[97;46m POST    [0m /student/search   r:/student/search
+2024/10/29 19:44:42.927  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   47.53175ms|   match|[97;46m POST    [0m /student/search   r:/student/search
+2024/10/29 19:46:46.881  [I] [main.go:30]  log/2024-10-29.log
+2024/10/29 19:46:46.881  [I] [main.go:33]  启动日志：项目启动成功
+2024/10/29 19:46:46.886  [I] [server.go:281]  http server Running on http://:8080
+2024/10/29 19:46:53.466  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m| 366.554625ms|   match|[97;46m POST    [0m /student/search   r:/student/search
+2024/10/29 19:46:55.200  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   2.555125ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 19:46:55.307  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|     24.392ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 19:47:02.717  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  55.059458ms|   match|[97;46m POST    [0m /student/search   r:/student/search
+2024/10/29 19:47:07.006  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  47.822459ms|   match|[97;46m POST    [0m /student/search   r:/student/search
+2024/10/29 19:47:11.032  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  56.969208ms|   match|[97;46m POST    [0m /student/search   r:/student/search
+2024/10/29 19:50:28.284  [I] [main.go:30]  log/2024-10-29.log
+2024/10/29 19:50:28.284  [I] [main.go:33]  启动日志：项目启动成功
+2024/10/29 19:50:28.288  [I] [server.go:281]  http server Running on http://:8080
+2024/10/29 19:50:30.633  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m| 262.380667ms|   match|[97;46m POST    [0m /student/search   r:/student/search
+2024/10/29 19:50:36.911  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  48.510375ms|   match|[97;46m POST    [0m /student/search   r:/student/search
+2024/10/29 20:12:36.974  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  54.575041ms|   match|[97;46m POST    [0m /student/search   r:/student/search
+2024/10/29 20:12:44.062  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|    57.3355ms|   match|[97;46m POST    [0m /student/search   r:/student/search
+2024/10/29 20:25:24.921  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  13.760583ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 20:25:28.079  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m| 443.794709ms|   match|[97;46m POST    [0m /student/search   r:/student/search
+2024/10/29 20:25:39.064  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   13.853732s|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 20:32:44.385  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   6.949417ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 20:32:44.622  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  29.747875ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 20:33:51.642  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  11.545458ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 20:33:51.765  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  37.744708ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 20:34:45.300  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|    9.19175ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 20:34:45.387  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  27.984959ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 20:35:44.278  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   3.539167ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 20:35:44.567  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  32.215917ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 20:48:08.419  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  10.894625ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 20:48:08.821  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|    36.2575ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 20:48:10.903  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   1.953875ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 20:48:10.970  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   23.67725ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 20:48:12.344  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   4.329166ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 20:48:12.407  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  23.974834ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 21:16:29.434  [I] [student.go:59]  &{22 viewbook M 12 jisuanji}
+2024/10/29 21:16:29.501  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  80.893292ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 21:16:30.888  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  24.329958ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 21:16:39.605  [I] [student.go:59]  &{2212 viewbook M 122 jisuanji2}
+2024/10/29 21:16:39.703  [E] [student.go:75]  添加失败 Error 1062 (23000): Duplicate entry 'viewbook' for key 'Sname'
+2024/10/29 21:16:39.703  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|    98.8175ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 21:16:43.422  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  31.793083ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 21:16:46.050  [I] [student.go:59]  &{2212 viewbook1 M 122 jisuanji2}
+2024/10/29 21:16:46.121  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  71.329625ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 21:16:47.390  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  25.939709ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:13:53.618  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|     12.908ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 22:13:54.128  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m| 260.835917ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:15:22.070  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   17.04375ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 22:15:22.222  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  35.176667ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:15:36.695  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  51.902375ms|   match|[97;46m POST    [0m /student/search   r:/student/search
+2024/10/29 22:16:53.404  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  14.188458ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 22:16:53.511  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  23.371292ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:21:46.901  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  13.102416ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 22:21:47.127  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  29.041292ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:22:26.918  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  12.333166ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 22:22:27.099  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  43.653125ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:23:09.795  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   8.212583ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 22:23:09.883  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  23.995916ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:24:46.976  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   3.608417ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 22:24:47.053  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  23.028125ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:28:07.159  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   9.110875ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 22:28:07.326  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  26.000125ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:38:08.454  [I] [main.go:30]  log/2024-10-29.log
+2024/10/29 22:38:08.455  [I] [main.go:33]  启动日志：项目启动成功
+2024/10/29 22:38:08.462  [I] [server.go:281]  http server Running on http://:8080
+2024/10/29 22:38:13.098  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   1.890167ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 22:38:13.752  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m| 254.554542ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:38:19.311  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  66.891167ms|   match|[97;46m POST    [0m /student/delete   r:/student/delete
+2024/10/29 22:38:20.393  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  29.170584ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:38:22.918  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   3.535333ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 22:38:23.024  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  23.114291ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:38:29.846  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  98.575084ms|   match|[97;46m POST    [0m /student/delete   r:/student/delete
+2024/10/29 22:38:31.063  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  23.621708ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:45:20.331  [I] [main.go:30]  log/2024-10-29.log
+2024/10/29 22:45:20.331  [I] [main.go:33]  启动日志：项目启动成功
+2024/10/29 22:45:20.336  [I] [server.go:281]  http server Running on http://:8080
+2024/10/29 22:45:27.763  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   2.705667ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 22:45:28.321  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m| 254.967041ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:45:35.290  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  58.187833ms|   match|[97;46m POST    [0m /student/search   r:/student/search
+2024/10/29 22:45:38.329  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  70.149875ms|   match|[97;46m POST    [0m /student/search   r:/student/search
+2024/10/29 22:45:41.350  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  46.320875ms|   match|[97;46m POST    [0m /student/search   r:/student/search
+2024/10/29 22:45:43.709  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  68.770292ms|   match|[97;46m POST    [0m /student/search   r:/student/search
+2024/10/29 22:45:49.076  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  85.178833ms|   match|[97;46m POST    [0m /student/search   r:/student/search
+2024/10/29 22:45:52.639  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  48.404125ms|   match|[97;46m POST    [0m /student/search   r:/student/search
+2024/10/29 22:45:55.287  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  93.190833ms|   match|[97;46m POST    [0m /student/search   r:/student/search
+2024/10/29 22:49:29.245  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  14.023833ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 22:49:29.410  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  23.237917ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:54:25.073  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   8.951417ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 22:54:25.332  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  25.364458ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:54:31.020  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  80.793458ms|   match|[97;46m POST    [0m /student/delete   r:/student/delete
+2024/10/29 22:54:42.502  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   2.425209ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 22:54:42.626  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  33.613167ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:54:46.283  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   2.720375ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 22:54:46.350  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  26.668542ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:54:49.340  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  81.011167ms|   match|[97;46m POST    [0m /student/delete   r:/student/delete
+2024/10/29 22:56:14.488  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   2.158959ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 22:56:14.577  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  24.886125ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:56:21.814  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m| 180.244583ms|   match|[97;46m POST    [0m /student/delete   r:/student/delete
+2024/10/29 22:56:41.095  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   3.854416ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 22:56:41.181  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|     22.564ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:56:51.513  [I] [student.go:60]  &{220200 viewbook M 112 123}
+2024/10/29 22:56:51.585  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   72.44425ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 22:57:11.168  [I] [main.go:30]  log/2024-10-29.log
+2024/10/29 22:57:11.168  [I] [main.go:33]  启动日志：项目启动成功
+2024/10/29 22:57:11.171  [I] [server.go:281]  http server Running on http://:8080
+2024/10/29 22:57:17.409  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   1.539708ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 22:57:17.735  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m| 267.462709ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:57:31.789  [I] [student.go:60]  &{7067 青岛金中新能源主机 M 12 asdf}
+2024/10/29 22:57:31.872  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  83.227625ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 22:59:17.606  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   1.465334ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 22:59:17.892  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  22.723125ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 22:59:26.194  [I] [student.go:60]  &{1212 12 M 121 1231}
+2024/10/29 22:59:26.249  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  55.706834ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 23:00:25.433  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   1.680583ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 23:00:25.845  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  22.816375ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 23:00:54.299  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   58.72975ms|   match|[97;46m POST    [0m /student/delete   r:/student/delete
+2024/10/29 23:04:27.324  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|    9.92775ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 23:04:27.568  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  29.843042ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 23:04:40.478  [I] [student.go:60]  &{1231 redis F 122 22级软件工程}
+2024/10/29 23:04:40.563  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   88.28025ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 23:04:41.750  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  24.960208ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 23:07:49.715  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   8.250083ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 23:07:49.953  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  25.281458ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 23:08:00.171  [D] [router.go:1305]  |            ::1|[97;43m 404 [0m|      1.775ms| nomatch|[97;46m POST    [0m /student/update
+2024/10/29 23:09:54.074  [I] [main.go:30]  log/2024-10-29.log
+2024/10/29 23:09:54.074  [I] [main.go:33]  启动日志：项目启动成功
+2024/10/29 23:09:54.079  [I] [server.go:281]  http server Running on http://:8080
+2024/10/29 23:09:59.817  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   2.868917ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 23:10:00.191  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m| 299.213875ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 23:10:08.389  [I] [student.go:135]  更新学生信息
+2024/10/29 23:10:08.476  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  87.255708ms|   match|[97;46m POST    [0m /student/update   r:/student/update
+2024/10/29 23:10:09.755  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|     23.023ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 23:18:34.335  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  11.579417ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 23:18:34.628  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  26.553959ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 23:19:11.636  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   1.671958ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 23:19:11.718  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|     23.124ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 23:20:45.608  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   3.243041ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 23:20:45.743  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  22.820167ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 23:22:45.538  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   4.633291ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 23:22:45.640  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  23.314834ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 23:23:00.156  [I] [student.go:60]  &{1111 lxz M 20 宇宙科学}
+2024/10/29 23:23:00.212  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  58.737667ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 23:23:01.374  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  30.765541ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 23:23:19.116  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   1.932958ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 23:23:19.189  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   22.38825ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 23:46:59.352  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  11.873959ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 23:46:59.562  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|     25.708ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 23:47:17.614  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  69.281667ms|   match|[97;46m POST    [0m /student/delete   r:/student/delete
+2024/10/29 23:47:18.711  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   33.21925ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 23:47:27.032  [I] [student.go:60]  &{22020007067 路修哲 M 20 软件工程}
+2024/10/29 23:47:27.094  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  63.568333ms|   match|[97;46m POST    [0m /student/add   r:/student/add
+2024/10/29 23:47:28.168  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  33.594958ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 23:50:03.570  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   6.229875ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 23:50:03.783  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  22.463292ms|   match|[97;44m GET     [0m /student   r:/student
+2024/10/29 23:52:02.815  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|   3.012375ms|   match|[97;44m GET     [0m /     r:/
+2024/10/29 23:52:02.905  [D] [router.go:1305]  |            ::1|[97;42m 200 [0m|  22.774042ms|   match|[97;44m GET     [0m /student   r:/student
