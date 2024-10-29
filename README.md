@@ -47,9 +47,10 @@ go install github.com/beego/bee/v2@latest
 bee run
 ```
 ## 贡献者
-感谢以下贡献者对本项目的支持和贡献：
 
-* [dx2331lxz](https://github.com/dx2331lxz)
+<a href="https://github.com/dx2331lxz/studentmanagement/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=dx2331lxz/studentmanagement" />
+</a>
 
 ## LICENSE
 [MIT](https://opensource.org/license/mit/)
