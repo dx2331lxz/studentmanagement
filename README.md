@@ -31,4 +31,22 @@ CREATE TABLE `Student` (
   UNIQUE KEY `Sname` (`Sname`)
 )
 ```
-5. 
+5. 此时你可以直接使用如下命令进行编译
+```
+go build -o student
+```
+* student为可执行文件名称
+
+6. 可以运行`./student`来运行项目
+7. 当然你也可以使用bee工具
+```
+go install github.com/beego/bee/v2@latest
+```
+8. 然后在项目跟目录
+```
+bee run
+```
+ 
+
+  
+  
