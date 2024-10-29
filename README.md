@@ -42,7 +42,7 @@ go build -o student
 ```
 go install github.com/beego/bee/v2@latest
 ```
-8. 然后在项目跟目录
+8. 然后在项目跟目录运行以下命令启动项目
 ```
 bee run
 ```
