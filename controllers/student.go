@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/beego/beego/v2/core/logs"
 	beego "github.com/beego/beego/v2/server/web"
+	"net/http"
 	"strconv"
 	"studentmanagement/models"
 )
@@ -153,6 +154,40 @@ func (c *StudentController) Update() {
 		return
 	}
 	c.Data["json"] = "更新成功"
+	c.ServeJSON()
+}
+
+// AdvancedSearch 高级查询
+func (c *StudentController) AdvancedSearch() {
+	var sage int
+	var sageCondition string
+	var err error
+	p_sage := c.GetString("sage")
+	if p_sage == "" {
+		sage = 0
+		sageCondition = ">"
+	} else {
+		sageCondition = c.GetString("sageCondition")
+		sage, err = c.GetInt("sage")
+		if err != nil {
+			c.Ctx.ResponseWriter.WriteHeader(http.StatusForbidden)
+			c.Data["json"] = "参数错误"
+			c.ServeJSON()
+			return
+		}
+	}
+	sdept := c.GetString("sdept")
+	ssex := c.GetString("ssex")
+
+	s := &models.Student{}
+	students, err := s.AdvancedSearch(sage, sdept, ssex, sageCondition)
+	if err != nil {
+		c.Ctx.ResponseWriter.WriteHeader(http.StatusForbidden)
+		c.Data["json"] = "查询失败"
+		c.ServeJSON()
+		return
+	}
+	c.Data["json"] = students
 	c.ServeJSON()
 }
 

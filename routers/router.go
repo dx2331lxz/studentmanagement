@@ -12,5 +12,5 @@ func init() {
 	beego.Router("/student/search", &controllers.StudentController{}, "post:Search")
 	beego.Router("/student/delete", &controllers.StudentController{}, "post:Delete")
 	beego.Router("/student/update", &controllers.StudentController{}, "post:Update")
-
+	beego.Router("/student/advancedSearch", &controllers.StudentController{}, "post:AdvancedSearch")
 }

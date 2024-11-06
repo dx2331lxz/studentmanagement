@@ -16,11 +16,41 @@
         <div class="col-md-6">
             <input type="text" id="search" class="form-control" placeholder="输入学生姓名或学号进行查询">
         </div>
-        <div class="col-md-2">
+        <div class="col-md-6 d-flex justify-content-start">
             <button class="btn btn-info mr-3" onclick="searchStudent()">查询</button>
             <!--            新增-->
             <button class="btn btn-primary" onclick="showAddStudent()">新增</button>
 
+            <button class="btn btn-secondary ml-3" onclick="toggleAdvancedSearch()">高级搜索</button>
+
+        </div>
+    </div>
+
+    <!-- 高级搜索选项 -->
+    <div class="row mt-3" id="advancedSearch" style="display: none;">
+        <div class="col-md-3">
+            <select id="advGender" class="form-control">
+                <option value="">性别</option>
+                <option value="M">男</option>
+                <option value="F">女</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <input type="text" id="advMajor" class="form-control" placeholder="专业">
+        </div>
+        <!-- 年龄筛选 -->
+        <div class="col-md-3">
+            <select id="advAgeCondition" class="form-control">
+                <option value="=">等于</option>
+                <option value=">">大于</option>
+                <option value="<">小于</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <input type="number" id="advAge" class="form-control" placeholder="年龄">
+        </div>
+        <div class="col-md-3 mt-2">
+            <button class="btn btn-info" onclick="advancedSearch()">执行高级搜索</button>
         </div>
     </div>
 
@@ -143,17 +173,17 @@
 <script>
     <!--    动态插入学生数据-->
     function updateStudentTable(data) {
-        console.log(data);
+
         var studentTable = $('#studentTable');
         studentTable.empty();
         for (var i = 0; i < data.length; i++) {
             var student = data[i];
-            console.log(student);
+            var sexDisplay = student.ssex === 'M' ? '男' : '女';
             var tr = $('<tr></tr>');
             tr.append('<td>' + student.sno + '</td>');
             tr.append('<td>' + student.sname + '</td>');
             tr.append('<td>' + student.sage + '</td>');
-            tr.append('<td>' + student.ssex + '</td>');
+            tr.append('<td>' + sexDisplay + '</td>');
             tr.append('<td>' + student.sdept + '</td>');
             console.log(student.sno, student.sname, student.sage, student.ssex, student.sdept);
             tr.append('<td><button class="btn btn-primary mr-2" onclick="editStudent(' + i + ')">编辑</button>' +
@@ -298,10 +328,43 @@
         $('#editStudentId').val(student.eq(0).text());
         $('#editName').val(student.eq(1).text());
         $('#editAge').val(student.eq(2).text());
-        $('#editGender').val(student.eq(3).text());
+        var sexDisplay = student.eq(3).text() === '男' ? 'M' : 'F';
+        $('#editGender').val(sexDisplay);
         $('#editMajor').val(student.eq(4).text());
         $('#editModal').modal('show');
     }
+
+    function toggleAdvancedSearch() {
+        $('#advancedSearch').toggle();
+    }
+    function advancedSearch() {
+        var ssex = $('#advGender').val();
+        var sdept = $('#advMajor').val();
+        var sage = $('#advAge').val();
+        var sageCondition = $('#advAgeCondition').val();
+        console.log(ssex, sdept, sage, sageCondition);
+        $.ajax({
+            url: '/student/advancedSearch',
+            type: 'post',
+            data: {
+                ssex: ssex,
+                sdept: sdept,
+                sage: sage,
+                sageCondition: sageCondition
+            },
+            success: function (data) {
+                // 将学生数据插入表格
+                updateStudentTable(data);
+            },
+            error: function (data) {
+                alert("高级搜索失败：" + data.responseText);
+            }
+        });
+
+
+
+    }
+
 </script>
 </body>
 </html>

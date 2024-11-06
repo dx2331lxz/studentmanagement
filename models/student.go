@@ -87,3 +87,64 @@ func (s *Student) Update() error {
 	}
 	return nil
 }
+
+// AdvancedSearch 高级查询
+func (s *Student) AdvancedSearch(sage int, sdept string, ssex string, sageCondition string) ([]Student, error) {
+	if sageCondition == "=" {
+		query := `SELECT sno, sname, ssex, sage, sdept FROM Student WHERE sage = ? AND sdept like ? AND ssex like ?`
+		rows, err := DB.Query(query, sage, "%"+sdept+"%", "%"+ssex+"%")
+		if err != nil {
+			logs.Error("Failed to query student: %v", err)
+			return nil, err
+		}
+		defer rows.Close()
+
+		var students []Student
+		for rows.Next() {
+			var student Student
+			err = rows.Scan(&student.Sno, &student.Sname, &student.Ssex, &student.Sage, &student.Sdept)
+			if err != nil {
+				return nil, err
+			}
+			students = append(students, student)
+		}
+		return students, nil
+	} else if sageCondition == ">" {
+		query := `SELECT sno, sname, ssex, sage, sdept FROM Student WHERE sage > ? AND sdept like ? AND ssex like ?`
+		rows, err := DB.Query(query, sage, "%"+sdept+"%", "%"+ssex+"%")
+		if err != nil {
+			logs.Error("Failed to query student: %v", err)
+			return nil, err
+		}
+		defer rows.Close()
+		var students []Student
+		for rows.Next() {
+			var student Student
+			err = rows.Scan(&student.Sno, &student.Sname, &student.Ssex, &student.Sage, &student.Sdept)
+			if err != nil {
+				return nil, err
+			}
+			students = append(students, student)
+		}
+		return students, nil
+	} else if sageCondition == "<" {
+		query := `SELECT sno, sname, ssex, sage, sdept FROM Student WHERE sage < ? AND sdept like ? AND ssex like ?`
+		rows, err := DB.Query(query, sage, "%"+sdept+"%", "%"+ssex+"%")
+		if err != nil {
+			logs.Error("Failed to query student: %v", err)
+			return nil, err
+		}
+		defer rows.Close()
+		var students []Student
+		for rows.Next() {
+			var student Student
+			err = rows.Scan(&student.Sno, &student.Sname, &student.Ssex, &student.Sage, &student.Sdept)
+			if err != nil {
+				return nil, err
+			}
+			students = append(students, student)
+		}
+		return students, nil
+	}
+	return nil, nil
+}
