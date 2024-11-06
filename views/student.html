@@ -109,6 +109,15 @@
                             <label for="editMajor">专业</label>
                             <input type="text" class="form-control" id="editMajor">
                         </div>
+                        <div class="form-group">
+                            <label for="editMajor">专业</label>
+                            <div>
+                                <input type="text" class="form-control d-none" id="editMajorInput"
+                                       placeholder="输入专业名称">
+                                <select class="form-control" id="editMajorSelect"></select>
+                                <span id="loadingSpinner" class="d-none"><i class="fas fa-spinner fa-spin"></i> 加载中...</span>
+                            </div>
+                        </div>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -152,6 +161,15 @@
                         <div class="form-group">
                             <label for="editMajor">专业</label>
                             <input type="text" class="form-control" id="AddMajor">
+                        </div>
+                        <div class="form-group">
+                            <label for="editMajor">专业</label>
+                            <div>
+                                <input type="text" class="form-control d-none" id="addMajorInput"
+                                       placeholder="输入专业名称">
+                                <select class="form-control" id="addMajorSelect"></select>
+                                <span id="addloadingSpinner" class="d-none"><i class="fas fa-spinner fa-spin"></i> 加载中...</span>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -263,13 +281,11 @@
 
     }
 
-    function updateStudent() {
-        // 实现更新学生的功能
-        alert("更新学生功能");
-    }
 
     function showAddStudent() {
         $('#AddModal').modal('show');
+        addloadMajors();
+
     }
 
     function searchStudent() {
@@ -332,11 +348,13 @@
         $('#editGender').val(sexDisplay);
         $('#editMajor').val(student.eq(4).text());
         $('#editModal').modal('show');
+        loadMajors();
     }
 
     function toggleAdvancedSearch() {
         $('#advancedSearch').toggle();
     }
+
     function advancedSearch() {
         var ssex = $('#advGender').val();
         var sdept = $('#advMajor').val();
@@ -360,8 +378,72 @@
                 alert("高级搜索失败：" + data.responseText);
             }
         });
+    }
 
+    function loadMajors() {
+        // 显示加载指示器
+        $('#loadingSpinner').removeClass('d-none');
+        $('#editMajorSelect').addClass('d-none');
 
+        $.ajax({
+            url: '/major', // 这里应该是你的API地址
+            method: 'GET',
+            success: function (data) {
+                console.log(data)
+                var select = $('#editMajorSelect');
+                select.empty(); // 清空之前的数据
+                if (data.length > 0) {
+                    // 假设数据是一个数组，每个元素都有一个name属性
+                    $.each(data, function (index, major) {
+                        select.append('<option value="' + major.major_id + '">' + major.major_name + '</option>');
+                    });
+                } else {
+                    select.append('<option value="">无可用专业</option>');
+                }
+                // 隐藏加载指示器
+                $('#loadingSpinner').addClass('d-none');
+                select.removeClass('d-none');
+            },
+            error: function () {
+                alert('无法加载专业列表，请检查网络连接或稍后再试。');
+                // 隐藏加载指示器
+                $('#loadingSpinner').addClass('d-none');
+                $('#editMajorSelect').removeClass('d-none');
+            }
+        });
+    }
+
+    function addloadMajors() {
+        // 显示加载指示器
+        $('#addloadingSpinner').removeClass('d-none');
+        $('#addMajorSelect').addClass('d-none');
+
+        $.ajax({
+            url: '/major', // 这里应该是你的API地址
+            method: 'GET',
+            success: function (data) {
+                console.log(data)
+                var select = $('#addMajorSelect');
+                select.empty(); // 清空之前的数据
+                if (data.length > 0) {
+                    // 假设数据是一个数组，每个元素都有一个name属性
+                    $.each(data, function (index, major) {
+                        select.append('<option value="' + major.major_id + '">' + major.major_name + '</option>');
+                    });
+                } else {
+                    select.append('<option value="">无可用专业</option>');
+                }
+                // 隐藏加载指示器
+                $('#addloadingSpinner').addClass('d-none');
+                select.removeClass('d-none');
+            },
+            error: function () {
+                alert('无法加载专业列表，请检查网络连接或稍后再试。');
+                // 隐藏加载指示器
+                $('#addloadingSpinner').addClass('d-none');
+                $('#addMajorSelect').removeClass('d-none');
+            }
+        });
 
     }
 
