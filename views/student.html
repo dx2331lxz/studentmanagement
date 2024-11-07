@@ -106,14 +106,8 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="editMajor">专业</label>
-                            <input type="text" class="form-control" id="editMajor">
-                        </div>
-                        <div class="form-group">
-                            <label for="editMajor">专业</label>
+                            <label for="editMajorSelect">专业</label>
                             <div>
-                                <input type="text" class="form-control d-none" id="editMajorInput"
-                                       placeholder="输入专业名称">
                                 <select class="form-control" id="editMajorSelect"></select>
                                 <span id="loadingSpinner" class="d-none"><i class="fas fa-spinner fa-spin"></i> 加载中...</span>
                             </div>
@@ -158,12 +152,9 @@
                                 <option value="F">女</option>
                             </select>
                         </div>
+
                         <div class="form-group">
-                            <label for="editMajor">专业</label>
-                            <input type="text" class="form-control" id="AddMajor">
-                        </div>
-                        <div class="form-group">
-                            <label for="editMajor">专业</label>
+                            <label for="addMajorInput">专业</label>
                             <div>
                                 <input type="text" class="form-control d-none" id="addMajorInput"
                                        placeholder="输入专业名称">
@@ -234,7 +225,7 @@
         var name = $('#AddName').val();
         var age = $('#AddAge').val();
         var sex = $('#AddGender').val();
-        var major = $('#AddMajor').val();
+        var major = $('#addMajorInput').val();
         //    给本地发送请求
         console.log(studentId, name, age, sex, major);
         $.ajax({
@@ -315,7 +306,7 @@
         var name = $('#editName').val();
         var age = $('#editAge').val();
         var sex = $('#editGender').val();
-        var major = $('#editMajor').val();
+        var major = $('#editMajorSelect').val();
         //    通过学号更新学生信息
         $.ajax({
             url: '/student/update',
@@ -340,15 +331,15 @@
 
     // 编辑
     function editStudent(index) {
+        loadMajors();
         var student = $('#studentTable tr').eq(index).find('td');
         $('#editStudentId').val(student.eq(0).text());
         $('#editName').val(student.eq(1).text());
         $('#editAge').val(student.eq(2).text());
         var sexDisplay = student.eq(3).text() === '男' ? 'M' : 'F';
         $('#editGender').val(sexDisplay);
-        $('#editMajor').val(student.eq(4).text());
+        $('#editMajorSelect').val(student.eq(4).text());
         $('#editModal').modal('show');
-        loadMajors();
     }
 
     function toggleAdvancedSearch() {
@@ -388,6 +379,7 @@
         $.ajax({
             url: '/major', // 这里应该是你的API地址
             method: 'GET',
+            async: false,
             success: function (data) {
                 console.log(data)
                 var select = $('#editMajorSelect');
@@ -395,7 +387,7 @@
                 if (data.length > 0) {
                     // 假设数据是一个数组，每个元素都有一个name属性
                     $.each(data, function (index, major) {
-                        select.append('<option value="' + major.major_id + '">' + major.major_name + '</option>');
+                        select.append('<option value="' + major.major_name + '">' + major.major_name + '</option>');
                     });
                 } else {
                     select.append('<option value="">无可用专业</option>');
@@ -428,7 +420,7 @@
                 if (data.length > 0) {
                     // 假设数据是一个数组，每个元素都有一个name属性
                     $.each(data, function (index, major) {
-                        select.append('<option value="' + major.major_id + '">' + major.major_name + '</option>');
+                        select.append('<option value="' + major.major_name + '">' + major.major_name + '</option>');
                     });
                 } else {
                     select.append('<option value="">无可用专业</option>');
