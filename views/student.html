@@ -225,7 +225,7 @@
         var name = $('#AddName').val();
         var age = $('#AddAge').val();
         var sex = $('#AddGender').val();
-        var major = $('#addMajorInput').val();
+        var major = $('#addMajorSelect').val();
         //    给本地发送请求
         console.log(studentId, name, age, sex, major);
         $.ajax({
@@ -276,7 +276,6 @@
     function showAddStudent() {
         $('#AddModal').modal('show');
         addloadMajors();
-
     }
 
     function searchStudent() {
