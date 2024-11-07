@@ -30,6 +30,13 @@ CREATE TABLE `Student` (
   PRIMARY KEY (`Sno`),
   UNIQUE KEY `Sname` (`Sname`)
 )
+
+CREATE TABLE `Major` (
+  `MajorID` int(11) NOT NULL AUTO_INCREMENT,
+  `MajorName` varchar(20) NOT NULL,
+  PRIMARY KEY (`MajorID`),
+  UNIQUE KEY `MajorName` (`MajorName`)
+)
 ```
 5. 此时你可以直接使用如下命令进行编译
 ```
